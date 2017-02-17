@@ -1,0 +1,43 @@
+
+<div class="container">
+
+  <div>
+    <acme-navbar></acme-navbar>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5">
+      <h2>Appliances</h2>
+      <select ng-change="main.onChange()" ng-model="main.selectedApp" style="width: 200px">
+        <option value = ''>Select...</option>
+        <option ng-repeat="app in main.apps" ng-value="app.id">
+          {{ app.name }}
+        </option>
+      </select>
+
+      <h2>Months</h2>
+      <select ng-change="main.onChange()" ng-model="main.selectedMonth" style="width: 200px">
+        <option value = ''>Select...</option>
+        <option ng-repeat="month in main.months">
+          {{ month }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-7">
+
+      <h2 style="text-align: center;">Bar Chart</h2>
+      <h3 style="text-align: center;"><font color="red">{{ main.selectedMonth }}</font></h3>
+      <c3chart bindto-id="chartGroupDataPoints" chart-data="main.datapoints" chart-columns="main.datacolumns"
+             chart-x="main.datax">
+        <chart-bar ratio="0.4"/>
+        <chart-axes values-x="x"/>
+        <chart-axis>
+            <chart-axis-x axis-position="outer-center"
+                          axis-label="The numbers"
+                          axis-type="category"/>
+        </chart-axis>
+    </c3chart>
+    </div>
+  </div>
+
+</div>
