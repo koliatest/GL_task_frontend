@@ -29,6 +29,6 @@ gulp.task('default', ['clean'], function () {
 });
 
 //deploy
-gulp.task('heroku:production', function(){
+gulp.task('production:heroku', function(){
   console.log('herokuduction');
 });
