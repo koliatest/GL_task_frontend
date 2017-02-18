@@ -7,7 +7,7 @@
 
   /** @ngInject */
   function authService($http, base64, $rootScope) {
-      var apiHost = 'http://localhost:8080/api/login/';
+      var apiHost = 'http://env-5160480.unicloud.pl/api/login/';
 
       var service = {
         apiHost: apiHost,

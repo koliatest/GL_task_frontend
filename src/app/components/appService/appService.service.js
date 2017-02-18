@@ -7,7 +7,7 @@
 
   /** @ngInject */
   function appService($log, $http, $rootScope) {
-      var apiHost = 'http://localhost:8080/api/appliances/user/';
+      var apiHost = 'http://env-5160480.unicloud.pl/api/appliances/user/';
 
       var service = {
         apiHost: apiHost,
