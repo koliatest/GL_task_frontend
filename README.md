@@ -6,6 +6,7 @@
   * bower install
 3. then for build and deploy the project run command: gulp serve 
    * project should be opened in browser (http://localhost:3000)
+4. To wake up API, follow this link http://env-5160480.unicloud.pl
 * P.S. If u will use data that i already put into database:
   * user 1: 
     * login: abc
